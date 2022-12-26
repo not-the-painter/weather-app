@@ -24,4 +24,4 @@ def get_current_weather(city):
     return current_weather
 
 
-print(get_current_weather("Ottawa"))
+# print(get_current_weather("Ottawa"))
