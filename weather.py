@@ -22,6 +22,3 @@ def get_current_weather(city):
         f"Current conditions for {city}, {country}:\n{condition}\nTemp: {temp}C\nFeels like: {feels_like}C")
 
     return current_weather
-
-
-# print(get_current_weather("Ottawa"))
