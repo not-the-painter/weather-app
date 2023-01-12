@@ -6,12 +6,18 @@ import weather
 def get_user_input(event=None):
     show_weather = weather.get_current_weather(city_input.get())
     city_input.delete("0", END)
+    global show_lbl
     show_lbl = Label(root, text=show_weather, justify='left')
-    show_lbl.grid(row=2, column=0, columnspan=2)
+    show_lbl.grid(row=2, column=0, columnspan=4)
+
+
+def reset():
+    global show_lbl
+    show_lbl.config(text="")
 
 
 root = Tk()
-root.geometry("350x200")
+root.geometry("500x250")
 root.title('Simple Weather App')
 
 city_lbl = Label(root, text='Enter the city: ')
@@ -26,6 +32,11 @@ city_input.bind('<Return>', get_user_input)
 get_city_btn = Button(root, text="Submit", command=get_user_input)
 get_city_btn.grid(row=1, column=1)
 
-quit_btn = Button(root, text="Quit", command=quit)
-quit_btn.grid(row=1, column=4)
+quit_btn = Button(root, text="Quit", width=6, command=quit)
+quit_btn.grid(row=1, column=2)
+
+reset_btn = Button(root, text="Reset", width=6,
+                   command=reset)
+reset_btn.grid(row=1, column=3)
+
 root.mainloop()
