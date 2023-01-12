@@ -4,9 +4,9 @@ import weather
 
 
 def get_user_input(event=None):
+    global show_lbl
     show_weather = weather.get_current_weather(city_input.get())
     city_input.delete("0", END)
-    global show_lbl
     show_lbl = Label(root, text=show_weather, justify='left')
     show_lbl.grid(row=2, column=0, columnspan=4)
 
