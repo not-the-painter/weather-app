@@ -15,7 +15,6 @@ def get_user_input(event=None):
     show_weather = weather.get_current_weather(city_input.get())
     city_input.delete("0", END)
     show_lbl.config(text=show_weather)
-    # show_lbl = Label(root, text=show_weather, justify='left')
     show_lbl.grid(row=2, column=0, columnspan=5)
 
 
@@ -23,10 +22,6 @@ def reset():
     global show_lbl
     show_lbl.destroy()
 
-
-# root = Tk()
-# root.geometry("400x250")
-# root.title('Simple Weather App')
 
 city_lbl = Label(root, text='Enter the city: ')
 city_lbl.grid(row=0, column=0)
