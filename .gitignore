@@ -27,6 +27,7 @@ Temporary Items
 .apdisk
 venv
 .env
+__pycache__
 
 
 # iCloud generated files
