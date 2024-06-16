@@ -9,8 +9,11 @@ def weatherapp():
         [sg.Text("Enter a city or region:")],
         [sg.Input(key="-IN-")],
         [sg.Text(size=(40, 5), key="-OUT-")],
-        [sg.Button("Submit", bind_return_key=True),
-         sg.Button("Reset"), sg.Button("Exit")],
+        [
+            sg.Button("Submit", bind_return_key=True),
+            sg.Button("Reset"),
+            sg.Button("Exit"),
+        ],
     ]
 
     window = sg.Window("Weather App", layout)
@@ -25,7 +28,7 @@ def weatherapp():
 
         if event == "Submit":
             try:
-                window["-OUT-"].update(weather.get_current_weather(values['-IN-']))
+                window["-OUT-"].update(weather.get_current_weather(values["-IN-"]))
             except KeyError:
                 window["-OUT-"].update("Please enter a valid city.")
         else:
