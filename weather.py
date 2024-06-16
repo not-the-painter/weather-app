@@ -13,12 +13,11 @@ def get_current_weather(city):
 
     response = requests.get(URL)
     json_response = json.loads(response.text)
-    country = json_response['location']['country']
+    country = json_response["location"]["country"]
     temp = json_response["current"]["temp_c"]
     feels_like = json_response["current"]["feelslike_c"]
     condition = json_response["current"]["condition"]["text"]
 
-    current_weather = (
-        f"Current conditions for {city}, {country}:\n{condition}\nTemp: {temp}C\nFeels like: {feels_like}C")
+    current_weather = f"Current conditions for {city}, {country}:\n{condition}\nTemp: {temp}C\nFeels like: {feels_like}C"
 
     return current_weather
