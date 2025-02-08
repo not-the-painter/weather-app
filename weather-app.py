@@ -28,7 +28,8 @@ def weatherapp():
 
         if event == "Submit":
             try:
-                window["-OUT-"].update(weather.get_current_weather(values["-IN-"]))
+                result = weather.get_current_weather(values["-IN-"])
+                window["-OUT-"].update(result)
             except KeyError:
                 window["-OUT-"].update("Please enter a valid city.")
         else:
