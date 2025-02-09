@@ -6,7 +6,7 @@ import weather
 
 def weatherapp():
     layout = [
-        [sg.Text("Enter a city or region:")],
+        [sg.Text("Enter a city or region:", size=(20, 1))],
         [sg.Input(key="-IN-")],
         [sg.Text(size=(40, 5), key="-OUT-")],
         [
