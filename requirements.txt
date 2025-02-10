@@ -1,1 +1,13 @@
-requests
+requests~=2.32.0
+
+pip~=24.0
+attrs~=23.1.0
+PySocks~=1.7.1
+cryptography~=42.0.5
+rsa~=4.9
+pyasn1~=0.6.0
+certifi~=2022.12.7
+urllib3~=1.26.14
+idna~=3.4
+charset-normalizer~=3.0.1
+PySimpleGUI~=5.0.4
