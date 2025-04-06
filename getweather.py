@@ -5,6 +5,7 @@ import weather
 
 
 def getweather():
+    sg.theme = ("GrayGrayGray")
     layout = [
         [sg.Text("Enter a city or region:", size=(20, 1))],
         [sg.Input(key="-IN-")],
