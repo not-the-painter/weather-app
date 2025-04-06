@@ -4,7 +4,7 @@ import PySimpleGUI as sg
 import weather
 
 
-def weatherapp():
+def getweather():
     layout = [
         [sg.Text("Enter a city or region:", size=(20, 1))],
         [sg.Input(key="-IN-")],
@@ -38,4 +38,4 @@ def weatherapp():
 
 
 if __name__ == "__main__":
-    weatherapp()
+    getweather()
