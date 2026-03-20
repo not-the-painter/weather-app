@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-app"
+version = "0.1.0"
+description = "Desktop weather app (tkinter + WeatherAPI)"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.28",
+]
+
+[project.scripts]
+weatherapp = "getweather:main"
+
+[tool.setuptools]
+py-modules = ["getweather", "weather"]
