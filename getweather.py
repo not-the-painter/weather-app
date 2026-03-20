@@ -52,5 +52,9 @@ def getweather():
     root.mainloop()
 
 
-if __name__ == "__main__":
+def main() -> None:
     getweather()
+
+
+if __name__ == "__main__":
+    main()
