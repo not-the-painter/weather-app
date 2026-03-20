@@ -38,3 +38,7 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+# python packager
+build/
+*.egg-info
+
