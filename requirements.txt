@@ -14,4 +14,3 @@ PySocks~=1.7.1
 cryptography~=42.0.5
 rsa~=4.9
 pyasn1~=0.6.0
-PySimpleGUI~=5.0.8
